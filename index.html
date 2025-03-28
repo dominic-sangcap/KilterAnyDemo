@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple Photo Editor</h1>
+        </header>
+
+        <main>
+            <div class="editor-panel">
+                <div class="image-upload-section">
+                    <input type="file" id="image-input" accept="image/*">
+                    <label for="image-input" class="upload-button">Choose Image</label>
+                </div>
+
+                <div class="controls">
+                    <h2>Adjustments</h2>
+
+                    <div class="control">
+                        <label for="brightness">Brightness:</label>
+                        <input type="range" id="brightness" min="0" max="200" value="100">
+                    </div>
+
+                    <div class="control">
+                        <label for="contrast">Contrast:</label>
+                        <input type="range" id="contrast" min="0" max="200" value="100">
+                    </div>
+
+                    <div class="control">
+                        <label for="saturation">Saturation:</label>
+                        <input type="range" id="saturation" min="0" max="200" value="100">
+                    </div>
+
+                    <div class="control">
+                        <label for="blur">Blur:</label>
+                        <input type="range" id="blur" min="0" max="10" value="0">
+                    </div>
+
+                    <button id="reset-button">Reset</button>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img id="editable-image" src="placeholder.jpg" alt="Your Image">
+            </div>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
