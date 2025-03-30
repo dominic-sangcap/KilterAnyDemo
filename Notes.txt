@@ -1,0 +1,15 @@
+3/30/25
+*change control panel to 
+-grayscale
+-shape creation -> allows for personalization
+-reset button
+
+*create github hosted website
+
+*restructure files for "easier maintainablity
+
+
+later todos???
+*create border template
+*add in trello like step by step
+*add in demo stick figure
