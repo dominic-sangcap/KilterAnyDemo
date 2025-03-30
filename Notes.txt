@@ -6,8 +6,9 @@
 
 *create github hosted website
 
-*restructure files for "easier maintainablity
-
+*restructure files for "easier maintainablity"
+index calls main.js & style.css
+-main.js calls from whatever else is in js folder
 
 later todos???
 *create border template
