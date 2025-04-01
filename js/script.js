@@ -8,6 +8,8 @@ export function oldScript(varName) {
         const saturationInput = varName.getElementById('saturation');
         const blurInput = varName.getElementById('blur');
         const resetButton = varName.getElementById('reset-button');
+        //teset
+        const grayScaleInput = varName.getElementById('grayscale');
     
         // Function to apply filters
         const applyFilters = () => {
@@ -15,12 +17,17 @@ export function oldScript(varName) {
             const contrast = contrastInput.value;
             const saturation = saturationInput.value;
             const blur = blurInput.value;
+
+            //try
+            const grayscale = grayScaleInput.value;
     
             editableImage.style.filter = `
                 brightness(${brightness}%)
                 contrast(${contrast}%)
                 saturate(${saturation}%)
                 blur(${blur}px)
+
+                grayscale(${grayscale}%)
             `;
         };
     
@@ -30,6 +37,8 @@ export function oldScript(varName) {
         contrastInput.addEventListener('input', applyFilters);
         saturationInput.addEventListener('input', applyFilters);
         blurInput.addEventListener('input', applyFilters);
+        //try
+        grayScaleInput.addEventListener('input', applyFilters);
     
         // Event listener for reset button
         resetButton.addEventListener('click', () => {
@@ -37,6 +46,8 @@ export function oldScript(varName) {
             contrastInput.value = 100;
             saturationInput.value = 100;
             blurInput.value = 0;
+            //try
+            grayScaleInput.value = 0;
             applyFilters();
         });
     

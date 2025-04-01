@@ -4,6 +4,6 @@ import { testGrayscale } from './grayscale.js';
 
 oldScript(document);
 
-testGrayscale(document);
+//testGrayscale(document);
 
 utilityFunction();

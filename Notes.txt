@@ -1,14 +1,38 @@
-3/30/25
+Todo list****
 *change control panel to 
--grayscale
+-grayscale button/range
 -shape creation -> allows for personalization
 -reset button
 
-*create github hosted website
+*turn into github hosted website
 
 *restructure files for "easier maintainablity"
-index calls main.js & style.css
--main.js calls from whatever else is in js folder
+css>>>
+|style.css
+
+js>>>>
+|main.js
+^|script.js
+^|grayscale.js
+
+<<<<<<others>>>>
+index.html
+
+*maybe use svg on image creation to get precise coordinates on uploaded image
+->demo creating a circle or mutliple
+-->being able to move circle w/o affecting other elements
+-->change color, add more after initial, delete
+!) either on top of individual circle, or in a seperate 'trello' like side hub
+
+-> blur out image not encompassed in circled area via 
+!) 1. area image - area w/n circle; 2. make copy of just areas under circles layer on top of entire bulr image
+
+
+*create a key/map for da noobies
+
+
+Notes:
+not having editableImage.style.filter changes in singular file makes for some rly ugly workarounds
 
 later todos???
 *create border template
